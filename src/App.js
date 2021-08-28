@@ -3,22 +3,26 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="login-container">
+      <div className="loginform-container">
+
+        <h2 className="loginform-header">Account Login</h2>
+        <div className="loginform-input-container">
+          <label className="loginform-label">Username</label>
+          <input type="text"></input>
+        </div>
+        <div className="loginform-input-container">
+          <label className="loginform-label">Password</label>
+          <input type="password"></input>
+        </div>
+        <div className="loginform-input-actions-container">
+          <button className="loginform-input-actions">Login</button>
+          <button className="loginform-input-actions">Register</button>
+        </div>
+
+      </div>
     </div>
+
   );
 }
 
