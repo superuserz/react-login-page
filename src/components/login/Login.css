@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(../../assets/background.jpg);
+    background-size: initial;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .login-container {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .loginform-container {
+      border: 2px solid black;
+      box-sizing: border-box;
+      box-shadow: 0 4px px 0 rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      width: 500px;
+      padding: 20px;
+      position: fixed;
+  }
+  
+  .loginform-input-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .loginform-header {
+     font-style: italic;
+     font-variant: small-caps;
+    
+  }
+  
+  .loginform-label {
+    padding-right: 30px;
+    font-style: italic;
+    font-variant: small-caps;
+  }
+  
+  input[type="text"] {
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border:none;
+      transition: all 0.5s ease-in-out;
+  }
+  
+  input[type="password"] {
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border:none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  input[type="text"]:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+  
+  input[type="password"]:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+  
+  .loginform-input-actions-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .loginform-input-actions {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-style: italic;
+    font-variant: small-caps;
+    border:none;
+    border-radius: 12px;
+  }
+  
+  .loginform-input-actions:hover {
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .loginform-input-container {
+      flex-direction: column;
+    }
+    .loginform-header {
+      text-align: center;
+    }
+  }
+  
+  
+  
